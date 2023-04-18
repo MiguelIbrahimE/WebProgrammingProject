@@ -1,5 +1,24 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+if(isset($_POST['name'])){
+   $name = mysqli_real_escape_string($conn, $_POST['name']);
+} else {
+   $name = '';
+}
 
+if(isset($_POST['cpassword'])){
+   $cpass = md5($_POST['cpassword']);
+} else {
+   $cpass = '';
+}
+
+if(isset($_POST['user_type'])){
+   $user_type = $_POST['user_type'];
+} else {
+   $user_type = '';
+}
 @include './config.php';
 ini_set('session.gc_maxlifetime', 3600); // Set session lifetime to 1 hour
 ini_set('session.cookie_lifetime', 3600); // Set cookie lifetime to 1 hour
@@ -14,7 +33,7 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = " SELECT * FROM users WHERE email = '$email' && PASSWORD = '$pass' ";
+   $select = " SELECT * FROM users WHERE EMAIL = '$email' && PASSWORD = '$pass' ";
 
    $result = mysqli_query($conn, $select);
 
@@ -22,7 +41,7 @@ if(isset($_POST['submit'])){
 
       $row = mysqli_fetch_array($result);
 
-      if($row['user_type'] == 'admin'){
+      if($row['user_type'] == 'LAU'){
          $key = "my-secret-key";
          $method = "AES-256-CBC";
          $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
@@ -35,7 +54,7 @@ if(isset($_POST['submit'])){
          $_SESSION['admin_name'] = $row['name'];
          header('location:admin_page.php');
 
-      }elseif($row['user_type'] == 'user'){
+      }elseif($row['user_type'] == 'AUB'){
          $plaintext=$email;
          $key = "Oblivion";
          $method = "AES-256-CBC";

@@ -15,11 +15,21 @@
     <a href="index.html" class="logo" target="_blank">
         <img src="./dormitium-logo.png" alt=""  style="width:50px;height:50px">
     </a>
-
-    
-
+    <a href="index.html" class="logo" target="_blank">
+        <img src="./logo-color.png" alt=""  style="width:50px;height:50px">
+    </a>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+    <label for="menu-icon"></label>
+    <nav class="nav"> 		
+        <ul class="pt-5">
+            <li><a href="./Pages/LAU.php">LAU</a></li>
+            <li><a href="./Pages/AUB.php">AUB</a></li>
+            <li><a href="./users/register_form.php">Sign In</a></li>
+        </ul>
+    </nav>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
+   
    <br>
    <br>
 <div style="align-items: center;align-self: center;">
