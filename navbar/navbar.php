@@ -4,7 +4,7 @@ function loadNavBar(){
      
 <header class="header" id="header">
     <nav class="navbar container">
-       <a href="../index.php" class="brand"><img src="../logo-no-background.png"style="width:46px"></a>
+       <a href="../index.php" class="brand"><img src="../dormitium-logo.png"style="width:46px"></a>
        <div class="burger" id="burger">
           <span class="burger-line"></span>
           <span class="burger-line"></span>

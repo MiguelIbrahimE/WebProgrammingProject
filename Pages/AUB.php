@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <!--Head-->
-   <link rel="icon" href="../logo-no-background.png">
-  <link rel="stylesheet" type="text/css" href="../CSS/restaurants.css">
+  <link rel="icon" href="../dormitium-logo.png">
+  <link rel="stylesheet" type="text/css" href="../CSS/Display.css">
   <!--Burger Icon-->
-  <title>Restaurants - UULebanon</title>
+  <title>AUB - Dormitium</title>
 </head>
 <body>
   <!-- Start of HTML and NavBar-->
@@ -114,7 +114,6 @@ $pdo = null;
 <script>
   function run(){
     const id=document.getElementById();
-    
   }
 </script>
 </html>
