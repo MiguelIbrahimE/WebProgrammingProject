@@ -65,10 +65,10 @@
 </body>
 <script>
   function Restau(){
-    document.location.href="./Pages/AUB.php"
+    document.location.href="./Pages/LAU.php"
   }
   function Tourism(){
-    document.location.href="./Pages/LAU.php"
+    document.location.href="./Pages/AUB.php"
   }
 </script>
 </html>
