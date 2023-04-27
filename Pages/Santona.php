@@ -13,7 +13,7 @@
 
 <?php
 
-include "../navbar/navbar.php";
+ require "../navbar/navbar.php";
 loadNavBar();
 ?>
 
@@ -45,52 +45,11 @@ loadNavBar();
 
 <div class="textSlider">
 
-<marquee class = "marquee" behavior="scroll" direction="left">
-        HAPPINESS DOSEN'T HAVE JUST ONE ADDRESS
-</marquee>
+
 
 
 </div>
 
-
-<div class="wrapper">
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-    <div class="item">
-        <h2 class="overlayText">Item2</h2>
-    </div>
-</div>
 
 
 </body>

@@ -21,14 +21,7 @@ function loadNavBar(){
              <li class="menu-item"><a class="menu-link" href="../users/register_form.php">Sign Up/Log In</a></li>
          </ul>
        </div>
-       <span><i class="bx bx-search search-toggle"></i></span>
-       <div class="search-block">
-          <form class="search-form">
-             <span><i class="bx bx-arrow-back search-cancel"></i></span>
-             <input type="search" name="search" class="search-input" placeholder="Search here...">
-          </form>
-          <div id="search-results"></div>
-       </div>
+       
        
     </nav>
  </header>
