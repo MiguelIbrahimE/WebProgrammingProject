@@ -23,7 +23,7 @@ function loadNavBar(){
         if (mysqli_num_rows($result) > 0) {
 
     ?>
-
+      
 <header class="header" id="header">
     <nav class="navbar container">
        <a href="../index.php" class="brand"><img src="../logo-no-background.png"style="width:46px"></a>
@@ -33,17 +33,8 @@ function loadNavBar(){
           <span class="burger-line"></span>
        </div>
        <span class="overlay"></span>
-       <div class="menu" id="menu">
-         
-       </div>
+       
        <span><i class="bx bx-search search-toggle"></i></span>
-       <div class="search-block">
-          <form class="search-form">
-             <span><i class="bx bx-arrow-back search-cancel"></i></span>
-             <input type="search" name="search" class="search-input" placeholder="Search here...">
-          </form>
-          <div id="search-results"></div>
-       </div>
        
     </nav>
  </header>

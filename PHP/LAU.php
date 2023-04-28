@@ -63,7 +63,7 @@ try {
               <!--1024x740!-->
                <article>
                  <figure>
-                   <?php echo'<a hre  f="'.$name.'.php" target="_blank">'?>
+                   <?php echo'<a hre  f="'.$name.'.php" >'?>
                     <?php echo' <img src="../Images/'.$name.'.jpg" alt="">'?>
                    </a>
                    <figcaption>
@@ -74,7 +74,7 @@ try {
                       
                      </ol>
                      <h2 class="post-title">
-                       <?php echo  '<a href=./'.$name.'.php target="_blank">';?><?php echo''.$name ?>
+                       <?php echo  '<a href=./'.$name.'.php >';?><?php echo''.$name ?>
                        </a>
                      </h2>
                      <?php
