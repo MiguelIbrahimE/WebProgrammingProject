@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
          // Generate a hash of the encrypted data
          $hash = hash('sha256', $ciphertext);
          $_SESSION['admin_name'] = $row['name'];
-         header('location:admin_page.php');
+         header('location:../php/LAU.php');
 
       }elseif($row['user_type'] == 'AUB'){
          $plaintext=$email;
@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
          // Generate a hash of the encrypted data
          $hash = hash('sha256', $ciphertext);
          $_SESSION['user_name'] = $hash;
-         header('location:../php/LAU.php');
+         header('location:../php/AUB.php');
 
       }
      
