@@ -26,19 +26,19 @@ require "../config/cfg.php";
         <div class="container">
         <!--Defining set elements-->
           <input type="radio" id="All" name="categories" value="All" checked>
-          <input type="radio" id="Closest" name="categories" value="Closest">
-          <input type="radio" id="Near" name="categories" value="Near">
+          <input type="radio" id="Closest" name="categories" value="closest">
+          <input type="radio" id="Near" name="categories" value="near">
                <!-- Enabling filtering and how to define them and display them-->
           <ol class="filters">
             <li>
               <label for="All">All</label>
             </li>
             <li>
-              <label for="Closest">Closest</label>
+              <label for="closest">closest</label>
             </li>
            
             <li>
-              <label for="Near">Near</label>
+              <label for="near">Near</label>
             </li>
            
           </ol>

@@ -64,10 +64,10 @@
 </body>
 <script>
   function Restau(){
-    document.location.href="./users/register_form.php"
+    document.location.href="./Pages/LAU.php"
   }
   function Tourism(){
-    document.location.href="./users/register_form.php"
+    document.location.href="./Pages/AUB.php"
   }
 </script>
 </html>
