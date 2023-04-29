@@ -5,7 +5,7 @@
    <link rel="icon" href="../dormitium-logo.png">
   <link rel="stylesheet" type="text/css" href="../CSS/Display.css">
   <!--Burger Icon-->
-  <title>LAU - Dormitium</title>
+  <title>AUB - Dormitium</title>
 </head>
 <body>
   <!-- Start of HTML and NavBar-->
