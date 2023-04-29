@@ -22,9 +22,8 @@
     <label for="menu-icon"></label>
     <nav class="nav"> 		
         <ul class="pt-5">
-            <li><a href="./Pages/LAU.php">LAU</a></li>
-            <li><a href="./Pages/AUB.php">AUB</a></li>
-            <li><a href="./users/register_form.php">Sign In</a></li>
+            <li><a href="./users/register_form.php">LAU</a></li>
+            <li><a href="./users/register_form.php">AUB</a></li>
         </ul>
     </nav>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -65,10 +64,10 @@
 </body>
 <script>
   function Restau(){
-    document.location.href="./Pages/LAU.php"
+    document.location.href="./users/register_form.php"
   }
   function Tourism(){
-    document.location.href="./Pages/AUB.php"
+    document.location.href="./users/register_form.php"
   }
 </script>
 </html>
