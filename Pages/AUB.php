@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../CSS/Display.css">
   <!--Burger Icon-->
   <title>AUB - Dormitium</title>
+  <script src="../JS/SearchBar.js"s> </script>
 </head>
 <body>
   <!-- Start of HTML and NavBar-->
@@ -34,7 +35,7 @@ require "../config/cfg.php";
               <label for="All">All</label>
             </li>
             <li>
-              <label for="closest">closest</label>
+              <label for="closest">Closest</label>
             </li>
            
             <li>
