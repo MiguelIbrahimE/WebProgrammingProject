@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 
          $row = mysqli_fetch_array($result);
 
-         if($row['user_type'] == 'LAU'){
+         if(isset($row['user_type']) && $row['user_type'] == 'LAU'){
             $key = "Oblivion";
             $method = "AES-256-CBC";
             $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
@@ -43,9 +43,9 @@ if(isset($_POST['submit'])){
             // Generate a hash of the encrypted data
             $hash = hash('sha256', $ciphertext);
             $_SESSION['admin_name'] = $row['name'];
-            header('location:../php/LAU.php');
+            header('location:  ../php/LAU.php');
 
-         }elseif($row['user_type'] == 'AUB'){
+         }elseif(isset($row['user_type']) && $row['user_type'] == 'AUB'){
             $plaintext=$email;
             $key = "Oblivion";
             $method = "AES-256-CBC";
@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){
             // Generate a hash of the encrypted data
             $hash = hash('sha256', $ciphertext);
             $_SESSION['user_name'] = $hash;
-            header('location:../php/AUB.php');
+            header('location: ../php/AUB.php');
          }
       }else{
          $error[] = 'Incorrect email or password!';

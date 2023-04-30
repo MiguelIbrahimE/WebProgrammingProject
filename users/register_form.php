@@ -6,7 +6,6 @@ if (!$conn) {
 }
 session_start();
 
-
 if(isset($_POST['submit'])){
    $current_time = date('Y-m-d H:i:s');
    $current_time2 = date('Y-m-d H:i:s');
@@ -15,7 +14,10 @@ if(isset($_POST['submit'])){
    $pass = md5($_POST['password']);
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
-
+   $email_regex = '/^[a-zA-Z0-9._%+-]+@(gmail|outlook|yahoo)\.(com|net|org)$/i';
+   if (!preg_match($email_regex, $email)) {
+      $error[] = 'invalid email address!';
+   }
    $select = "SELECT * FROM users WHERE email = '$email' && PASSWORD = '$pass'";
    $result = mysqli_query($conn, $select);
    if (!$result) {
