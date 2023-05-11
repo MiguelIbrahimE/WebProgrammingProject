@@ -19,23 +19,30 @@
     <link rel="stylesheet" href="./CSS/indexstyles.css">
 </head>
 <body>
-
+    <!-- Dormitium logo as a link to the index page -->
     <a href="index.html" class="logo" target="_blank">
         <img src="./dormitium-logo.png" alt=""  style="width:50px;height:50px">
     </a>
+
+    <!-- Colored logo as a link to the index page -->
     <a href="index.html" class="logo" target="_blank">
         <img src="./logo-color.png" alt=""  style="width:50px;height:50px">
     </a>
+
+    <!-- Hamburger menu icon -->
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
     <label for="menu-icon"></label>
-    <nav class="nav"> 		
+
+    <!-- Navigation bar -->
+    <nav class="nav">         
         <ul class="pt-5">
+            <!-- Link to the registration form for LAU -->
             <li><a href="./users/register_form.php">LAU</a></li>
+            <!-- Link to the registration form for AUB -->
             <li><a href="./users/register_form.php">AUB</a></li>
         </ul>
     </nav>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    
+    <!-- Script for the Ionicons library -->
    
    <br>
    <br>
@@ -46,6 +53,8 @@
   <br> <br>
   <br>
   <br>
+  
+   <!-- Main content section with two logos -->
   <div style="padding: 10%;">
     <div>
       <div class="content_img" style="float: left; width: 45%; padding-bottom: 10px;">

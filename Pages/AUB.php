@@ -62,7 +62,7 @@ try {
       $type=$row["Type"];
 
       ?>
-   
+   <!--width: 360px;-->
      <li class="post" data-category=<?php echo''.$type?>>
               <!--1024x740!-->
                <article>

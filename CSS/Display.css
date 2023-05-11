@@ -281,6 +281,16 @@ html {
       
       /* MQ
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
+      @media screen and (max-width: 9500px) {
+        .posts {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 1900px) {
+        .posts {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
       @media screen and (max-width: 1500px) {
         .posts {
           grid-template-columns: repeat(3, 1fr);
@@ -730,8 +740,8 @@ html {
       height: fit-content;
     }
     div.card img {
-      height:246px;
-      width: 360px;
+      height:123px;
+      width: 1800px;
     
     }
     div.card .card__image-holder {
