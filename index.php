@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dormitium</title>
+
+    <!-- Link to the favicon -->
     <link rel="icon" href="./dormitium-logo.png">
+
+    <!-- Link to the Google font 'Cedarville Cursive' -->
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet"href="./CSS/indexstyles.css">
+    
+    <!-- Link to the Google font 'Tangerine' -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="./CSS/indexstyles.css">
 </head>
 <body>
 
