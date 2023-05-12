@@ -58,12 +58,12 @@
    <!-- Main content section with two logos -->
   <div style="padding: 10%;">
     <div>
-      <div class="content_img" style="float: left; width: 45%; padding-bottom: 10px;">
+      <div class="content_img" style="float: left; width: 45%; ">
         <img src="./Images/AUB-logo.png" style="width: 100%;" onclick="Tourism();">
         <div style="text-align: center;">AUB</div>
       </div>
       <div>
-        <div class="content_img" style="float: right; width: 47%; padding-bottom: 10px;">
+        <div class="content_img" style="float: right; width: 47%; ">
           <img src="./Images/lau-logo-social-media.jpg" style="width: 100%;" onclick="Restau()">
           <div style="text-align: center;">LAU</div>
         </div>
