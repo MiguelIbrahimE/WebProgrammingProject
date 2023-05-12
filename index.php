@@ -37,9 +37,10 @@
     <nav class="nav">         
         <ul class="pt-5">
             <!-- Link to the registration form for LAU -->
-            <li><a href="./users/register_form.php">LAU</a></li>
+            <li><a href="./Pages/LAU.php">LAU</a></li>
             <!-- Link to the registration form for AUB -->
-            <li><a href="./users/register_form.php">AUB</a></li>
+            <li><a href="./Pages/AUB.php">AUB</a></li>
+            <li><a href="./users/register_form.php">Sign Up</a></li>
         </ul>
     </nav>
     <!-- Script for the Ionicons library -->

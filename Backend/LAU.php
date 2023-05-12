@@ -1,8 +1,11 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <link rel="icon" href="../dormitium-logo.png">
-  <title>AUB - UULebanon</title>
+  <title>LAU - UULebanon</title>
 </head>
 <body>
 <style>
@@ -25,7 +28,7 @@ body{
 }
 </style>
 <?php 
-    require_once "../navbar/loggedinbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
     

@@ -1,3 +1,7 @@
+<head>
+   <link rel="icon" href="../dormitium-logo.png">
+  <title>AUB - UULebanon</title>
+</head>
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -29,36 +33,9 @@ if(isset($_POST['submit'])){
       $result = mysqli_query($conn, $select);
 
       if(mysqli_num_rows($result) > 0){
-
+         // User exists
          $row = mysqli_fetch_array($result);
-
-         if(isset($row['user_type']) && $row['user_type'] == 'LAU'){
-            $key = "Oblivion";
-            $method = "AES-256-CBC";
-            $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
-            
-            // Encrypt the data using AES encryption and the generated iv
-            $ciphertext = openssl_encrypt($plaintext, $method, $key, 0, $iv);
-            
-            // Generate a hash of the encrypted data
-            $hash = hash('sha256', $ciphertext);
-            $_SESSION['admin_name'] = $row['name'];
-            header('location:  ../php/LAU.php');
-
-         }elseif(isset($row['user_type']) && $row['user_type'] == 'AUB'){
-            $plaintext=$email;
-            $key = "Oblivion";
-            $method = "AES-256-CBC";
-            $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
-            
-            // Encrypt the data using AES encryption and the generated iv
-            $ciphertext = openssl_encrypt($plaintext, $method, $key, 0, $iv);
-            
-            // Generate a hash of the encrypted data
-            $hash = hash('sha256', $ciphertext);
-            $_SESSION['user_name'] = $hash;
-            header('location: ../php/AUB.php');
-         }
+         header('location: ../Backend/LAU.php');
       }else{
          $error[] = 'Incorrect email or password!';
       }
