@@ -39,7 +39,7 @@ $result = mysqli_query($conn, $query);
 
 <?php
 
-require "../navbar/navbar.php";
+require "../navbar/loggedinbar.php";
 loadNavBar();
 ?>
 
