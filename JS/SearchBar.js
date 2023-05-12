@@ -1,3 +1,5 @@
+
+
 const navbarMenu = document.getElementById("menu"),
     burgerMenu = document.getElementById("burger"),
     bgOverlay = document.querySelector(".overlay");

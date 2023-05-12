@@ -9,6 +9,7 @@ if(!isset($_SESSION["user_name"])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <!--Head-->
    <link rel="icon" href="../dormitium-logo.png">
   <link rel="stylesheet" type="text/css" href="../CSS/Display.css">
