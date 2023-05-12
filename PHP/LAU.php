@@ -1,9 +1,3 @@
-<?
-session_start();
-if(!isset($_SESSION["user_name"])){
-  header("Location: ../index.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +38,7 @@ try {
   $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-  $stmt = $pdo->query("SELECT NAME,RENTING_FEES,CAPACITY FROM lau_dorms");
+  $stmt = $pdo->query("SELECT NAME,RENTING_FEES,CAPACITY,LOCATION,Type FROM lau_dorms");
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <div class="cards">
@@ -54,18 +48,21 @@ try {
       $name = $row["NAME"];
       $price = $row["RENTING_FEES"];
       $capacity= $row["CAPACITY"];
+      $location= $row["LOCATION"];
+      $type= $row["Type"];
       ?>
       <div class="card">
               <div class="card__image-holder">
                 <?php echo'<img class="card__image" src="../Images/'.$name.'.jpg" />';?>
               </div>
               <div class="card-title">
-                <h2>
-                  <?php echo'<a href="./'.$name.'.php"style="" target="_blank">'.$name.'</a>';?>
-                  <?php echo'<p style="font: size 12pxs;" target="_blank">Monthly Fees: $'.$price.'</p>';?>
-                  <?php echo'<p style="font: size 12pxs;" target="_blank">Available rooms: '.$capacity.'</p>';?>
+                <p>
+                  <h2><?php echo'<a href="./'.$name.'.php"style="" target="_blank">'.$name.'</a>';?></h2>
+                  <?php echo'<p style="font-size 12px;" target="_blank">Monthly Fees: $'.$price.'</p>';?>
+                  <?php echo'<p style="font-size 10px;" target="_blank">Available rooms: '.$capacity.'</p>';?>
+                  <?php echo'<p style="font-size 10px;" target="_blank">Location: '.$location.'</p>';?>
                   
-                </h2>
+                </p>
                 
               </div>
             </div>
